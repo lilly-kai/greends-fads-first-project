@@ -1,0 +1,22 @@
+5.1. Can you explain the copy (cp ../temp-* .) command used above?
+
+cp means copy. ".." means the folder one level up. "temp-*" means all
+files that start with "temp-". "." means the folder I am in now.
+So the command copies all temp- files from the folder above into
+my current folder.
+(For me it did not work, because my files were in my-first-project.
+So I used: cp ../my-first-project/temp-* .)
+
+5.2. Can you explain why, in this case, we did not have to do git init?
+
+We did not need git init because I downloaded this folder from GitHub
+with git clone. The folder already had git inside, so it was already a git repository. In my-first-project I
+made the folder myself, so there I had to use git init.
+
+5.3. Can you commit the files copied? What do you need to do? Execute the commands that are needed.
+
+Yes. I did the same as in part 3. First I used git add to add the
+files, and then git commit to save a new version:
+
+git add temp-data.csv temp-average.py temp-doc.txt
+git commit -m "add temp files and answers"
